@@ -13,9 +13,26 @@ margin-bottom: 30px;
 
 .text-section2 {
     color: #0d3120;
-font-size: 25px ; font-weight: 450;
-text-align: center;
+font-size: 25px ; font-weight: 450px;
 line-height: 90px;
+}
+
+.buttondeCor {
+background-color: #ffb000;
+color: white;
+border-radius: 25px;
+width: 120px ;
+height: 43px;
+text-align: center;
+font-family: poppins;
+font-size: 16px;
+font-weight: 200px;
+
+}
+
+.buttondeCor:hover {
+    background-color: #e44200;
+    color: white;
 }
 
 .background-section3 { 
@@ -80,4 +97,10 @@ background-color: #ffb000;
 form {
 
    margin: auto;
+}
+
+@media (max-width:768px) {
+    .alinhamento  {
+      margin: auto;
+    }
 }
