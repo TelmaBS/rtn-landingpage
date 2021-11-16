@@ -74,6 +74,10 @@ text-align: left;
     
 }
 
+.align {
+    align-content: center;
+}
+
 .title-section5 {
     color:white ;
     font-size: 35px; font-weight: 600;
