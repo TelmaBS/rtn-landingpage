@@ -74,16 +74,31 @@ text-align: left;
     
 }
 
-.align {
-    align-content: center;
+
+
+.personResponsive {
+    width: 100%;
+    height: auto;
+}
+
+.removepadding {
+    padding: 0px 0px 0px 0px;
+}
+
+.imageFormat {
+ padding: 60px ;
+
 }
 
 .title-section5 {
     color:white ;
-    font-size: 35px; font-weight: 600;
-    padding: 60px 0px 120px 0px;
+    font-size: auto; font-weight: 600;
+padding: 60px 0px 0px 90px;
+margin: auto;
 
 }
+
+
 
 .background-section5 {
 background-color: #ffb000;
@@ -106,5 +121,11 @@ form {
 @media (max-width:768px) {
     .alinhamento  {
       margin: auto;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .title-section5 {
+      font-size: 50px;
     }
 }
