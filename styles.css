@@ -51,12 +51,13 @@ font-weight: 200px;
 
 ul.list-group li {
     list-style-type: none;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .text-section3 {
 color: white;
 text-align: left;
+
 }
 
 .title-section4 {
@@ -166,10 +167,12 @@ form {
 }
 
 @media screen and (max-width: 768px) {
-    .personResponsive {
+    .imageNorthPortugal {
       display: none;
     }
 }
+
+
 
 @media screen and (min-width: 992px) {
     .title-section5 {
