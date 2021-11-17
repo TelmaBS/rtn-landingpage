@@ -86,7 +86,7 @@ text-align: left;
 }
 
 .imageFormat {
- padding: 60px ;
+padding: 115px 0px 115px 0px;
 
 }
 
@@ -124,7 +124,7 @@ form {
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
     .title-section5 {
       font-size: 50px;
     }
