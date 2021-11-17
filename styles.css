@@ -85,7 +85,7 @@ text-align: left;
 .personResponsive {
     width: 90%;
     height: auto;
-    position: absolute;
+    position: relative;
     bottom: 0;
 }
 
@@ -103,9 +103,11 @@ padding: 115px 0px 115px 0px;
 padding: 60px 0px 0px 90px;
 margin: auto;
 }
-
-
-
+.imageNorthPortugal{
+justify-content: center;
+    align-content: center;
+    display: grid;
+}
 .background-section5 {
 background-color: #ffb000;
 }
