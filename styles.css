@@ -17,6 +17,11 @@ font-size: 25px ; font-weight: 450px;
 line-height: 90px;
 }
 
+.formDecor {
+    border-radius: 25px;
+
+}
+
 .buttondeCor {
 background-color: #ffb000;
 color: white;
@@ -77,8 +82,10 @@ text-align: left;
 
 
 .personResponsive {
-    width: 100%;
+    width: 90%;
     height: auto;
+    position: absolute;
+    bottom: 0;
 }
 
 .removepadding {
@@ -87,7 +94,6 @@ text-align: left;
 
 .imageFormat {
 padding: 115px 0px 115px 0px;
-
 }
 
 .title-section5 {
@@ -95,14 +101,12 @@ padding: 115px 0px 115px 0px;
     font-size: auto; font-weight: 600;
 padding: 60px 0px 0px 90px;
 margin: auto;
-
 }
 
 
 
 .background-section5 {
 background-color: #ffb000;
-
 }
 
 .title-section6 {
@@ -110,9 +114,40 @@ background-color: #ffb000;
     font-size: 25px; font-weight: 600;
     text-align: center;
     padding: 60px 0px 30px 0px ;
+}
 
+.colorFooter{
+background-color: #0d3120;
+width: auto;
+height: 300px;
+}
+
+.colorFooter1 {
+background-color: #032b18;
+width: auto;
+height: 60px;
 
 }
+
+.footer2text {
+font-size: 18px ;
+color: white;
+text-align: center; 
+padding: 20px;
+
+}
+
+.formImg {
+margin: 0px;
+padding: 0px;
+
+}
+
+.logoalign {
+    text-align: center;
+    padding: 100px;
+}
+
 form {
 
    margin: auto;
@@ -121,6 +156,18 @@ form {
 @media (max-width:768px) {
     .alinhamento  {
       margin: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .personResponsive {
+      display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .personResponsive {
+      display: none;
     }
 }
 
