@@ -7,6 +7,10 @@
  height: 850px;
  }
 
+ .header{
+     background-image: url('./imagens/desktopfundo.png');
+     height: 100vh;
+    }
 
  .alignAllCenter {
     align-items: center;
