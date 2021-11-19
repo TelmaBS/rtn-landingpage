@@ -10,13 +10,53 @@
  .header{
      background-image: url('./imagens/desktopfundo.png');
      height: 100vh;
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+
     }
+
+.HeaderTittle {
+    color: white;
+    font-size: 55px;
+
+}
+
+.HeaderSUBtittle {
+   color: white;
+    font-family: 'poppins', sans-serif;
+    font-size: 18px;
+
+}
+
+.pb_navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    font-family: "Montserrat", Arial, sans-serif;
+}
+
+.nav-link {
+font-family: 'poppins', sans-serif;
+font-size: 18px;
+color: white!important;
+margin-right: 30px;
+
+
+}
+
+   
+}
+.btn-success {
+    background-color: #ffb000;
+}
 
  .alignAllCenter {
     align-items: center;
     justify-content: center;
     display: flex;
-    min-width: 100vh;
  }
 
 .title-section2 { 
@@ -113,6 +153,11 @@ font-size: 22px;
 .imgwave {
     position: absolute;
     bottom: 0;
+   right: 0 ;
+ width: 100px;
+ padding-bottom: 40px;
+
+
 }
 
 .personResponsive {
@@ -145,6 +190,13 @@ justify-content: center;
 background-color: #ffb000;
 }
 
+#orangeForm {
+    position: absolute;
+     margin-left: 87px;
+     width: 100px;
+
+}
+
 .title-section6 {
     color: #0d3120;
     font-size: 25px; font-weight: 600;
@@ -161,6 +213,7 @@ width: auto;
 background-color: #032b18;
 width: auto;
 height: 60px;
+padding: 10px;
 
 }
 
@@ -168,7 +221,6 @@ height: 60px;
 font-size: 18px ;
 color: white;
 text-align: center; 
-padding: 20px;
 
 }
 
@@ -206,10 +258,23 @@ form {
     }
 }
 
-
+@media screen and (max-width: 768px) {
+    #orangeForm    {
+      width: 50px;
+      margin-left: 63px;
+    }
+}
 
 @media screen and (min-width: 992px) {
     .title-section5 {
-      font-size: 50px;
+      font-size: 55px;
     }
 }
+
+
+@media screen and (max-width: 768px) {
+    .title-section5 {
+     padding: 60px 0px 0px 63px;
+    }
+}
+
