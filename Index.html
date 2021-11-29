@@ -5,11 +5,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>RTN LadingPage</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
+
+<!-- Primary Meta Tags -->
+<title>Remote Tech Nature</title>
+<meta name="title" content="Remote Tech Nature">
+<meta name="description" content="RTP is for Digital Nomads, Companys and Freelancer. Make North of Portugal you remote office you can also plan your Kickoff Projects and conference. Increase the team spirit with activities and bootcamps!">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://metatags.io/">
+<meta property="og:title" content="Remote Tech Nature">
+<meta property="og:description" content="RTP is for Digital Nomads, Companys and Freelancer. Make North of Portugal you remote office you can also plan your Kickoff Projects and conference. Increase the team spirit with activities and bootcamps!">
+<meta property="og:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://metatags.io/">
+<meta property="twitter:title" content="Remote Tech Nature">
+<meta property="twitter:description" content="RTP is for Digital Nomads, Companys and Freelancer. Make North of Portugal you remote office you can also plan your Kickoff Projects and conference. Increase the team spirit with activities and bootcamps!">
+<meta property="twitter:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+
+
 
 </head>
 
@@ -20,20 +41,20 @@
 
                 <div class="container" style="padding: 20px;" >
                     <img src="imagens/logo.svg" style="width: 150px;">
-                    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
+                  <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
                         data-target="#probootstrap-navbar" aria-controls="probootstrap-navbar" aria-expanded="false"
                         aria-label="Toggle navigation">
-                        <span><i class="ion-navicon"></i></span>
+                        <img src="imagens/menumobile.svg">
                     </button>
                     <div class="collapse navbar-collapse " id="probootstrap-navbar">
                         <ul class="navbar-nav ml-auto">
-                            <li class="nav-item"><a class="nav-link" href="#">What happens here</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Activities</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Why North of Portugal</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#WhatHappensHere">What happens here</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#StaysHere">Activities</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#WhyNorthOfPortugal">Why North of Portugal</a></li>
                             <li class="nav-item cta-btn ml-xl-2 ml-lg-2 ml-md-0 ml-sm-0 ml-0">
-                                <a class="nav-link">
-                                    <span class="pb_rounded-4 px-4">
-                                        <button type="button" class="btn  buttondeCor">Contact us</button>
+                                <a  class="nav-link">
+                                    <span href="#Contactus" class="pb_rounded-4 px-4 " >
+                                        <button type="button" class="btn  buttondeCor"style="margin-bottom: 20px;"; >Contact us</button>
                                     </span>
                                 </a>
                             </li>
@@ -53,17 +74,17 @@
                                 Portugal Your <br> Remote Office</h1>
 
                             <div class="HeaderSUBtittle">
-                                <p class="mb-4">Work with diferente views, Plan your Kickoff Projects and conference.
-                                    Increase the team spirit with activities and bootcamps!</p>
+                                <p class="mb-4"> Work with diferente views <span class="VanishInMobile">, Plan your Kickoff Projects and conference.
+                                    Increase the team spirit with activities and bootcamps!</span></p>
 
-                                <button type="button" class="btn  buttondeCor">Let's Talk </button>
+                                    <a href="#Contactus">  <button type="button" class="text-center btn  buttondeCor">Let's Talk </button></a>
 
                             </div>
                         </div>
 
 
                         <div class="col-md-6 relative align-self-center">
-                            <img class="Imagemap" src="imagens/imagefrontpage.svg">
+                            <img class="w-100 imagefrontpage" src="imagens/imagefrontpage.svg">
 
                         </div>
                     </div>
@@ -72,7 +93,7 @@
     </section>
 
     <!--section 2-->
-    <div class="container h850 alignAllCenter ">
+    <div id="WhatHappensHere" class="container h850 alignAllCenter ">
         <div class="row">
 
             <div class="col-12">
@@ -102,7 +123,7 @@
             </div>
 
             <div class="col-12 text-center mt-4 mb-4 order-md-5">
-                <button type="button" class="btn btn-light buttondeCor" style="margin-top: 60px;">Let's Talk</button>
+                <a href="#Contactus"><button type="button" class="btn btn-light buttondeCor" style="margin-top: 60px;">Let's Talk</button></a>
             </div>
 
         </div>
@@ -112,7 +133,7 @@
     <!--section 3-->
     <div class="container-fluid background-section3 h850 alignAllCenter">
         <div class="container-lg">
-            <div class="row">
+            <div id="StaysHere" class="row">
                 <div class="col-12 col-md-4">
                     <img src="imagens/halfform.svg" style=" width: 123px" ;>
                     <h1 class="title-section3">Stays Here</h1>
@@ -128,35 +149,30 @@
                 </div>
                 <div class="col-12 col-md-8">
                     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                        <ol class="carousel-indicators">
+                        <ol class="carousel-indicators" id="carousel-indicators-stayshere">
                             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
                         </ol>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img class="d-block w-100" src="https://via.placeholder.com/1400x1000"
+                                <img class="d-block w-100" src="imagens/Atividade3.png"
                                     alt="First slide">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100" src="https://via.placeholder.com/1400x1000"
+                                <img class="d-block w-100" src="imagens/Atividade2.png"
                                     alt="Second slide">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100" src="https://via.placeholder.com/1400x1000"
+                                <img class="d-block w-100" src="imagens/Atividade4.png"
                                     alt="Third slide">
                             </div>
-                        </div>
-                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
-                            data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
-                            data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="imagens/Atividade1.png"
+                                    alt="Four slide">
+                            </div>
+                        </div>  
                     </div>
                 </div>
             </div>
@@ -167,11 +183,11 @@
     <section>
         <div class="container h850 alignAllCenter">
             <div class="row justify-content-center">
-                <div class="col-12 col-md-6 ">
+                <div id="WhyNorthOfPortugal" class="col-12 col-md-6 ">
                     <img src="imagens/yellowform.svg" width="95px" style="margin-left: 280px; height: 118px;">
-                    <h1 class="title-section4">Why North Of <br>
+                    <h1 class="title-section4 northPadding">Why North Of <br>
                         Portugal</h1>
-                    <p class="text-section4">North of Portugal is a <span class="spanColor">safe</span> zone, ideal for
+                    <p class="text-section4 northPadding">North of Portugal is a <span class="spanColor">safe</span> zone, ideal for
                         Remote WORK has several places to visit in your spare
                         time,such as exploration of the Douro region, <span class="spanColor">Natural Reserves</span>
                         (Gêres), several regions with beaches and
@@ -191,12 +207,11 @@
         </div>
     </section>
     <!--section 5-->
-    <div class="container-fluid background-section5 alignAllCenter">
-
+    <div class="container-fluid background-section5 ">
         <div class="row">
-            <div class="col-12 col-md-6 removepadding">
+            <div class="col-12 col-md-6">
 
-                <h1 class="title-section5 ">WORKING WITH <br>
+                <h1 class="title-section5">WORKING WITH <br>
                     DIFFERENT VIEWS </h1>
                 <img src="imagens/orangeform.svg" id="orangeForm">
                 <img class="personResponsive" src="imagens/person.png" width="545" height="525" />
@@ -204,23 +219,28 @@
             </div>
 
             <div class="col-12 col-md-6 p-5">
-                <div id="carouselExampleIndicators" class="carousel slide p-3" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <div id="carouselExampleIndicators2" class="carousel slide p-3 carousel-2" data-ride="carousel">
+                    <ol class="carousel-indicators" id="carousel-indicators-workingWith">
+                        <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators2" data-slide-to="2"></li>
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img class="d-block w-100" src="imagens/placementArea.png" alt="First slide">
                         </div>
-
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="imagens/placementArea1.png" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="imagens/placementArea2.png" alt="Third slide">
+                        </div>
                     </div>
-                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="sr-only">Previous</span>
                     </a>
-                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <a class="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="sr-only">Next</span>
                     </a>
@@ -231,13 +251,13 @@
     </div>
 
     <!--section 6-->
-    <div class="container ">
-        <div class="row justify-content-center">
+    <div id="Contactus" class="container ">
+        <div class=" justify-content-center">
             <div class="col-12">
                 <h1 class="title-section6">MESSAGE TO BOOKING</h1>
             </div>
 
-            <form class="form-section6">
+            <form>
                 <div class="form-group">
                     <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nome"
                         style="border-radius: 25px;">
@@ -255,11 +275,12 @@
 
                 <div class="form-group ">
                     <select class="form-control" id="exampleFormControlSelect1" style="border-radius: 25px;">
-                        <option>Hotel x</option>
-                        <option>Hotel x</option>
-                        <option>Hotel x</option>
-                        <option>Hotel x</option>
-                        <option>Hotel x</option>
+                        <option>Hotel</option>
+                        <option>Casa do Joe</option>
+                        <option>Hotel Vista Bela</option>
+                        <option>Hotel Rural Misarela</option>
+                        <option>Padrões Guest House's</option>
+                        <option>São Cristóvão Nature Country Hotel</option>
                     </select>
                 </div>
 
@@ -273,7 +294,7 @@
                 </div>
 
                 <div class="form-group">
-                    <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Quantidade"
+                    <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Nº de pessoas"
                         style="border-radius: 25px;">
                 </div>
 
@@ -283,13 +304,16 @@
 
             </form>
 
-            <div class="col-12 formImg">
-                <img src="imagens/footerdesktop.png" class="img-fluid" />
-            </div>
         </div>
     </div>
 
-
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 formImg">
+                <img src="imagens/footerdesktop.png" class="w-100" />
+            </div>
+        </div>
+    </div>
     <!--footer-->
 
     <footer class="container-fluid colorFooter">

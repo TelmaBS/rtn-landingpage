@@ -22,6 +22,22 @@
 
 }
 
+
+.navbar-toggler {
+    background-color: white;
+
+}
+
+.nav-link{
+padding: 20px 0px 10px 0px;
+text-align: center;
+
+}
+
+.navbar-collapse {
+    background-color: #0d3120;
+}
+
 .HeaderSUBtittle {
    color: white;
     font-family: 'poppins', sans-serif;
@@ -43,12 +59,10 @@ font-family: 'poppins', sans-serif;
 font-size: 18px;
 color: white!important;
 margin-right: 30px;
-
-
 }
-
    
-}
+
+
 .btn-success {
     background-color: #ffb000;
 }
@@ -124,6 +138,12 @@ font-size: 22px;
 
 }
 
+#carousel-indicators-stayshere li {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background-color:#e44200;
+}
 .title-section4 {
     color: #e44200;
     font-size: 50px; font-weight: 600;
@@ -167,9 +187,7 @@ font-size: 22px;
     bottom: 0;
 }
 
-.removepadding {
-    padding: 0px 0px 0px 0px;
-}
+
 
 .imageFormat {
 padding: 115px 0px 115px 0px;
@@ -240,28 +258,68 @@ form {
    margin: auto;
 }
 
-@media (max-width:768px) {
-    .alinhamento  {
-      margin: auto;
-    }
+.form-control{
+
+    height: calc(1.5em + 0.75rem + 10px);
 }
 
-@media screen and (max-width: 768px) {
-    .personResponsive {
-      display: none;
-    }
-}
 
-@media screen and (max-width: 768px) {
-    .imageNorthPortugal {
-      display: none;
-    }
-}
+
 
 @media screen and (max-width: 768px) {
     #orangeForm    {
       width: 50px;
       margin-left: 63px;
+    }
+
+    .imageNorthPortugal {
+        display: none;
+      }
+      .VanishInMobile {
+        display: none;
+      }
+
+      .personResponsive {
+        display: none;
+      }
+
+      .HeaderTittle {
+        font-size: 40px;
+        
+    }
+
+    .imagefrontpage {
+        display: none;
+      }
+
+      .alinhamento  {
+        margin: auto;
+      }
+
+      .title-section5 {
+        padding: 60px 0px 0px 63px;
+        font-size: 45px;
+       }
+
+       .title-section5 {
+        padding: 60px 0px 0px 63px;
+       }
+
+       .header{
+        background-image: url('./imagens/mobilefundo.png');
+    }
+
+    .carousel-2 {
+        margin-top: 50px;
+    }
+
+    .northPadding {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .title-section4 {
+        font-size: 45px;
     }
 }
 
@@ -269,12 +327,10 @@ form {
     .title-section5 {
       font-size: 55px;
     }
+    .navbar-collapse {
+        background-color: transparent;
+      }
 }
 
 
-@media screen and (max-width: 768px) {
-    .title-section5 {
-     padding: 60px 0px 0px 63px;
-    }
-}
 
