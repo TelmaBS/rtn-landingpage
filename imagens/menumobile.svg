@@ -1,14 +1,14 @@
-<svg id="Grupo_40806" data-name="Grupo 40806" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25.683" height="25.782" viewBox="0 0 25.683 25.782">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44" height="38" viewBox="0 0 44 38">
   <defs>
     <clipPath id="clip-path">
-      <rect id="Retângulo_6" data-name="Retângulo 6" width="25.683" height="25.782" fill="#fff"/>
+      <rect id="Retângulo_286" data-name="Retângulo 286" width="44" height="38" transform="translate(8187 -121)" fill="#fff" stroke="#707070" stroke-width="1"/>
     </clipPath>
   </defs>
-  <path id="Caminho_38" data-name="Caminho 38" d="M182.513,376.867h-5.157a.414.414,0,0,0-.414.414V393.85a.414.414,0,0,0,.414.414h5.157a.414.414,0,0,0,.414-.414V377.281a.414.414,0,0,0-.414-.414Zm0,0" transform="translate(-176.533 -368.582)" fill="#fff"/>
-  <g id="Grupo_9" data-name="Grupo 9" transform="translate(0 0)">
-    <g id="Grupo_8" data-name="Grupo 8" transform="translate(0)" clip-path="url(#clip-path)">
-      <path id="Caminho_39" data-name="Caminho 39" d="M176.4,297.356a3.4,3.4,0,1,0,3.4,3.4,3.405,3.405,0,0,0-3.4-3.4Zm0,0" transform="translate(-173 -297.308)" fill="#fff"/>
-      <path id="Caminho_40" data-name="Caminho 40" d="M268.24,372.891a6.058,6.058,0,0,0-4.531,1.9v-1.076a.414.414,0,0,0-.414-.414h-4.939a.414.414,0,0,0-.414.414v16.569a.414.414,0,0,0,.414.414H263.5a.414.414,0,0,0,.414-.414v-8.2c0-2.763.751-3.839,2.676-3.839,2.1,0,2.264,1.725,2.264,3.981v8.056a.414.414,0,0,0,.414.414h5.148a.414.414,0,0,0,.414-.414V381.2c0-4.108-.783-8.307-6.592-8.307Zm0,0" transform="translate(-249.142 -365.018)" fill="#fff"/>
+  <g id="Grupo_de_máscara_34" data-name="Grupo de máscara 34" transform="translate(-8187 121)" clip-path="url(#clip-path)">
+    <g id="Grupo_238" data-name="Grupo 238">
+      <line id="Linha_22" data-name="Linha 22" x2="26" transform="translate(8196.5 -114.636)" fill="none" stroke="#fff" stroke-width="2"/>
+      <line id="Linha_23" data-name="Linha 23" x2="26" transform="translate(8196.5 -104.409)" fill="none" stroke="#fff" stroke-width="2"/>
+      <line id="Linha_24" data-name="Linha 24" x2="13" transform="translate(8209.5 -94.182)" fill="none" stroke="#fff" stroke-width="2"/>
     </g>
   </g>
 </svg>
