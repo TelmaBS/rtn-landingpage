@@ -450,6 +450,7 @@ span{
         display: flex;
         font-family: "Roboto", Sans-serif;;
     }
+
     #timer div{
         display: inline;
         padding: 5px;
@@ -459,6 +460,7 @@ span{
         text-align: center;
         margin-left: -5px;
     }
+
     #timer div span{
         color: black;
         display: block;
@@ -467,8 +469,13 @@ span{
         text-align: center;
         margin-top: 0px;
     }
+
     .elements{
         width: 50px;
+    }
+
+    .timer-cont{
+        margin-left: 0;
     }
 }
 
