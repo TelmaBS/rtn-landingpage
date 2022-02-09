@@ -87,20 +87,20 @@ font-family: 'poppins', sans-serif;
 
 }
 
-.buttondeCor {
+.buttonDecor {
 background-color: #ffb000;
-color: white;
+color: #032b18;
 border-radius: 25px;
 width: 120px ;
 height: 43px;
 text-align: center;
-font-family: poppins;
+font-family: 'poppins', sans-serif;
 font-size: 16px;
 font-weight: 200px;
-
+font-weight: bold;
 }
 
-.buttondeCor:hover {
+.buttonDecor:hover {
     background-color: #e44200;
     color: white;
 }
@@ -157,6 +157,7 @@ font-size: 22px;
 .text-section4 {
     font-size: 25px;
     color: #707070;
+    text-align: justify;
     
 }
 
@@ -327,5 +328,188 @@ form {
       }
 }
 
+.w-100{
+    border-radius: 5px;
+}
 
+.section3List{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    background-color: #e44200;
+    border-radius: 5px;
+    margin-top: 15px;
+    list-style-type: circle;
+    list-style-position: inside;
+}
 
+.text-sectionvision {
+    font-size: 25px;
+    color: white;
+    text-align: justify;
+}
+
+.title-sectionvision { 
+    color: white ;
+ font-size: 50px; font-weight: 600;
+margin-top: -130px;
+margin-left: 50px;
+}
+
+.imagevision{
+    border-radius: 5px;
+}
+
+.sectionvalueList{
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 10px;
+    background-color: #e44200;
+    border-radius: 5px;
+    margin-top: 10px;
+    list-style-type: circle;
+    list-style-position: inside;
+}
+
+.title-tickets { 
+    color: #e44200;
+    font-size: 45px; 
+    font-weight: 600;
+    padding-top: 25px;
+    text-align: center;
+}
+
+.button-site{
+    background-color: #e44200;
+    color: white;
+    border-radius: 25px;
+    width: 150px ;
+    height: 60px;
+    text-align: center;
+    font-family: 'poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 200px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.button-site:hover{
+    background-color: #ffb000;
+    color: #032b18;
+}
+
+#timer {
+    font-size: 60px;
+    font-weight: 500;
+    color: black;
+    padding-top: 1px;
+    width: 100px;
+    color: black;
+    text-align: center;
+    display: inline;
+    font-family: "Roboto", Sans-serif;
+}
+
+#timer div {
+    display: inline-block;
+    width: 250px;
+    padding: 5px;
+    background: #ffb000;
+    border-radius: 100px 100px 100px 100px;
+    border: 2px solid #ffb000;
+    margin: 10px;
+    text-align: center;
+}
+
+#timer div span {
+    color: black;
+    display: block;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    padding-bottom: 10px;
+    margin-top: -15px;
+}
+
+span{
+    font-family: "Montserrat", Sans-serif;
+}
+
+.timer-cont{
+    margin-left: 75px;
+}
+
+@media (max-width: 500px) { 
+    #timer{
+        font-size: 20px;
+        font-weight: 400;
+        color: black;
+        padding-top: 1px;
+        color: black;
+        text-align: center;
+        display: flex;
+        font-family: "Roboto", Sans-serif;;
+    }
+    #timer div{
+        display: inline;
+        padding: 5px;
+        background: #ffb000;
+        border-radius: 100px 100px 100px 100px;
+        border: 2px solid #ffb000;
+        text-align: center;
+        margin-left: -5px;
+    }
+    #timer div span{
+        color: black;
+        display: block;
+        font-size: 10px;
+        font-weight: 400;
+        text-align: center;
+        margin-top: 0px;
+    }
+    .elements{
+        width: 50px;
+    }
+}
+
+@media (min-width: 801px){
+    #timer {
+        font-size: 60px;
+        font-weight: 500;
+        color: black;
+        padding-top: 1px;
+        width: 100px;
+        color: black;
+        text-align: center;
+        display: inline-flex;
+        font-family: "Roboto", Sans-serif;
+    }
+    
+    #timer div {
+        display: inline-block;
+        width: 250px;
+        padding: 5px;
+        background: #ffb000;
+        border-radius: 100px 100px 100px 100px;
+        border: 2px solid #ffb000;
+        margin-left: 5px;
+        text-align: center;
+    }
+    
+    #timer div span {
+        color: black;
+        display: block;
+        font-size: 20px;
+        font-weight: 400;
+        text-align: center;
+        padding-bottom: 10px;
+        margin-top: -15px;
+    }
+    
+    span{
+        font-family: "Montserrat", Sans-serif;
+    }
+    .elements{
+        width: 200px;
+    }
+}
