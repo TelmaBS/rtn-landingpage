@@ -33,7 +33,7 @@
 
 <body>
 
-    <section>
+    <section id="entrance">
             <nav class="navbar navbar-expand-lg navbar-dark pb_navbar pb_scrolled-light">
 
                 <div class="container-lg" style="padding: 20px;">
@@ -51,7 +51,7 @@
                             <li class="nav-item cta-btn ml-xl-2 ml-lg-2 ml-md-0 ml-sm-0 ml-0">
                                 <a  class="nav-link">
                                     <span href="#Contactus" class="pb_rounded-4 px-4 " >
-                                        <button type="button" class="btn  buttonDecor"style="margin-bottom: 20px;"; >Contact us</button>
+                                        <button type="button" class="btn  buttonDecor" id="contact-btn" style="margin-bottom: 20px;"; >Contact us</button>
                                     </span>
                                 </a>
                             </li>
@@ -59,38 +59,37 @@
                     </div>
                 </div>
             </nav>
-        
-            <section
-                class="header pb_cover_v3 overflow-hidden cover-bg-indigo cover-bg-opacity text-left pb_gradient_v1 pb_slant-light alignAllCenter"
-                id="section-home">
-                <div class="container">
-                    <div class="row align-items-center justify-content-center">
-                        <div class="col-md-6">
-                            <h1 class="HeaderTittle">Make the Nature of <br>
-                                Portugal Your <br> Remote Office</h1>
 
-                            <div class="HeaderSUBtittle">
-                                <p class="mb-4"> Work with diferente views <span class="VanishInMobile">, Plan your Kickoff Projects and conference.
-                                    Increase the team spirit with activities and bootcamps!</span></p>
-
-                                    <a href="#Contactus">  <button type="button" class="text-center btn  buttonDecor">Let's Talk </button></a>
-
-                            </div>
-                        </div>
-
-
-                        <div class="col-md-6 relative align-self-center">
-                            <img class="w-100 imagefrontpage" src="imagens/imagefrontpage.svg">
-
-                        </div>
+            <section class="header pb_cover_v3 overflow-hidden cover-bg-indigo cover-bg-opacity text-left pb_gradient_v1 pb_slant-light alignAllCenter" id="section-home">
+                <div class="d-none d-md-block" style="position: relative; left: 0; top: 0; z-index: 12;">
+                    <div>
+                        <img src="../../SVG/morning-sky.svg" class="morning-sky">
                     </div>
-                </div>
+                   <div>
+                        <img src="../../morning/1920-1980-mountain.png" class="mountain-3 para-img" id="back-mountain"/>
+                        <img src="../../morning/1920-1980-mountain2.png" class="mountain-4 para-img" id="middle-mountain"/>
+                        <img src="../../morning/1920-1980-moutain3.png" class="mountain-5 para-img" id="front-mountain"/>
+                        <div class="fixme">
+                            <img src="../../morning/parallax-mountain.png" class="mountain-6 para-img" id="parallax-mountain"/>
+                    </div>
+                        
+                   </div>
+                      <svg viewBox="0 0 200 200">
+                        <g transform="translate(-12,-44)">
+                             <path d="M 10 90 
+                                      Q 40 10 200 60"
+                                id="theMotionPath"/>
+                            <image href="../../1 - morning/1-sun.svg" x="0" y="0" height="20px" width="20px" id="sun"/>
+                         </g>
+                        </svg>
+                  </div>
+
             </section>
     </section>
 
     <!--tickets section-->
-    <section>
-        <div class="container">
+    <section class="white-section">
+        <div class="container hide">
             <div class="col-12 d-block title-tickets">
                 <h1 class="title-tickets">SUPER EARLY BIRD TICKETS 'TILL</h1>
             </div>
@@ -99,7 +98,7 @@
                     <div id="timer"></div>
                 </div>
 
-            <div class="col-12 d-block text-center my-4">
+            <div class="col-12 d-block text-center mt-2">
                     <a href="https://fest.freelancerek.hu/" target="_blank"><button class="btn button-site" type="button">TICKETS</button></a>
             </div>
         </div>
@@ -107,10 +106,10 @@
 
     <!--short term vision section-->
     <section style="background-color: #ffb000;">
-        <div class="container-lg h850 alignAllCenter">
+        <div class="container-lg h850 alignAllCenter hide">
             <div class="row justify-content-center">
                 <div id="ShortTermVision" class="col-12 col-md-6">
-                    <img src="imagens/halfform.svg" style=" width: 123px;" ;>
+                    <img src="imagens/halfform.svg" class="loader" style=" width: 123px;" ;>
                     <h1 class="title-sectionvision northPadding">Short Term<br>
                         Vision</h1>
                     <div class="mt-5">
@@ -134,33 +133,35 @@
 
     <!--long term vision section-->
     <section>
-        <div class="container-lg h850 alignAllCenter">
-            <div class="row justify-content-center">
-                <div id="LongTermVision" class="col-12 col-md-6">
-                    <img src="imagens/yellowform.svg" width="95px" style="margin-left: 220px; height: 118px;">
-                    <h1 class="title-section4 northPadding">Long Term<br>
-                        Vision</h1>
-                    <div>
-                        <p class="text-section4 northPadding">Create a community of remote workers
-                            in Northern Portugal, where they can
-                            work and live sustainably and contribute
-                            positively to local development.
-                        </p>
+       <div class="hide">
+            <div class="container-lg h850 alignAllCenter">
+                <div class="row justify-content-center">
+                    <div id="LongTermVision" class="col-12 col-md-6">
+                        <img src="imagens/yellowform.svg" width="95px" style="margin-left: 220px; height: 118px;">
+                        <h1 class="title-section4 northPadding">Long Term<br>
+                            Vision</h1>
+                        <div>
+                            <p class="text-section4 northPadding">Create a community of remote workers
+                                in Northern Portugal, where they can
+                                work and live sustainably and contribute
+                                positively to local development.
+                            </p>
+                        </div>
+                    </div>
+           
+                    <div class="col-12 col-md-6 imageNorthPortugal">
+                        <img class="imagevision" src="https://i1.sndcdn.com/artworks-xiY0XGCzwaqflqpf-IrRcRg-t500x500.jpg" width="457" height="480" />
                     </div>
                 </div>
-
-                <div class="col-12 col-md-6 imageNorthPortugal">
-                    <img class="imagevision" src="https://i1.sndcdn.com/artworks-xiY0XGCzwaqflqpf-IrRcRg-t500x500.jpg" width="457" height="480" />
-                </div>
             </div>
-        </div>
-        <div class="waveajust">
-            <img class="imgwave" src="imagens/waveform.svg">
-        </div>
+            <div class="waveajust">
+                <img class="imgwave" src="imagens/waveform.svg">
+            </div>
+       </div>
     </section>
 
     <!--values section-->
-    <div class="container-fluid background-section3 h850 alignAllCenter">
+    <div class="container-fluid background-section3 h850 alignAllCenter hide">
         <div class="container-lg">
             <div id="Values" class="row">
                 <div class="col-12 col-md-4">
@@ -231,7 +232,7 @@
         </div>
     </div>
     <!--section 2-->
-    <div id="WhatHappensHere" class="container h850 alignAllCenter ">
+    <div id="WhatHappensHere" class="container h850 alignAllCenter hide">
         <div class="row">
 
             <div class="col-12">
@@ -269,7 +270,7 @@
 
 
     <!--section 3-->
-    <div class="container-fluid background-section3 h850 alignAllCenter">
+    <div class="container-fluid background-section3 h850 alignAllCenter hide">
         <div class="container-lg">
             <div id="StaysHere" class="row">
                 <div class="col-12 col-md-4">
@@ -318,7 +319,7 @@
 
     <!--section 4-->
     <section>
-        <div class="container-lg h850 alignAllCenter">
+        <div class="container-lg h850 alignAllCenter hide">
             <div class="row justify-content-center">
                 <div id="WhyNorthOfPortugal" class="col-12 col-md-6">
                     <img src="imagens/yellowform.svg" width="95px" style="margin-left: 280px; height: 118px;">
@@ -344,7 +345,7 @@
         </div>
     </section>
     <!--section 5-->
-    <div class="container-fluid background-section5 ">
+    <div class="container-fluid background-section5 hide>
         <div class="row">
             <div class="col-12 col-md-6">
 
@@ -380,7 +381,7 @@
     </div>
 
     <!--section 6-->
-    <div id="Contactus" class="container ">
+    <div id="Contactus" class="container hide">
         <div class=" justify-content-center">
             <div class="col-12">
                 <h1 class="title-section6">MESSAGES</h1>
@@ -425,7 +426,7 @@
         </div>
     </div>
 
-    <div class="container-fluid">
+    <div class="container-fluid hide">
         <div class="row">
             <div class="col-12 formImg">
                 <img src="imagens/footerdesktop.png" class="w-100" />
@@ -435,7 +436,7 @@
     <!--footer-->
 
     <footer class="container-fluid colorFooter">
-        <div class="row">
+        <div class="row hide">
             <div class="col-12 text-center p-5">
                 <img class="img-fluid" src="imagens/logo.svg" />
             </div>
@@ -485,6 +486,74 @@ function updateTimer() {
         '<div>' + s + '<span class="elements">SECONDS</span></div>';
 }
 setInterval('updateTimer()', 1000);
+
+function positionSun()
+{
+  var  scrollY = window.scrollY || window.pageYOffset;
+  var  maxScrollY = document.documentElement.scrollHeight - window.innerHeight;
+  var  path = document.getElementById("theMotionPath");
+
+  // Calculate distance along the path the car should be for the current scroll amount
+  var  pathLen = path.getTotalLength();
+  var  dist = pathLen * scrollY / maxScrollY;
+  var  pos = path.getPointAtLength(dist);
+
+  // Calculate position a little ahead of the car (or behind if we are at the end), so we can calculate car angle
+  if (dist + 1 <= pathLen) {
+    var  posAhead = path.getPointAtLength(dist + 1);
+    var  angle = Math.atan2(posAhead.y - pos.y, posAhead.x - pos.x);
+  } else {
+    var  posBehind = path.getPointAtLength(dist - 1);
+    var  angle = Math.atan2(pos.y - posBehind.y, pos.x - posBehind.x);
+  }
+
+  // Position the car at "pos" totated by "angle"
+  var  car = document.getElementById("sun");
+  car.setAttribute("transform", "translate(" + pos.x + "," + pos.y + ") rotate(" + rad2deg(angle) + ")");
+}
+
+function rad2deg(rad) {
+  return 180 * rad / Math.PI;
+}
+
+// Reposition car whenever there is a scroll event
+window.addEventListener("scroll", positionSun);
+
+// Position the car initially
+positionSun();
 </script>
 
+<script>
+    var backm = document.getElementById('back-mountain')
+    var midm = document.getElementById('middle-mountain')
+    var frontm = document.getElementById('front-mountain')
+    var sky = document.getElementById('sky')
+
+    window.addEventListener('scroll' , function(){
+        var value = window.scrollY;
+        backm.style.marginTop = 275 + 'px';
+        midm.style.marginTop = 300 + 'px';
+        frontm.style.marginTop = 325 + 'px';
+        backm.style.top = value * 0.95 + 'px';
+        midm.style.top = value * 0.75 + 'px';
+        frontm.style.top = value * 0.5 + 'px';
+    })
+
+    
+    var fixmeTop = $('.fixme').offset().top;
+    $(window).scroll(function() {
+    var currentScroll = $(window).scrollTop();
+    if (currentScroll >= 580) {
+        $('.fixme').css({
+            position: 'fixed',
+            top: '-795px',
+            left: '0'
+        });
+    } else {
+        $('.fixme').css({
+            position: 'static'
+        });
+    }
+});
+</script>
 </html>

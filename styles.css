@@ -1,4 +1,8 @@
 
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
  h1 {
     font-family: 'Poppins', sans-serif;
  }
@@ -8,12 +12,70 @@
  }
 
  .header{
-     background-image: url('./imagens/desktopfundo.png');
+    background-image: url('../../morning/1920-1980-sky.png');
+    background-size: cover;
+    background-repeat: no-repeat;
      height: 100vh;
-     background-repeat: no-repeat;
-     background-position: center;
-     background-size: cover;
+     top: 0;
+     left: 0;
+    }
 
+    .morning-sky{
+        position: fixed;
+        top: 0px;
+        left: 0;
+        z-index: -2;
+    }
+
+    .mountain-3
+    {
+      position: relative;
+      top: 150px;
+      left: 0;
+      z-index: 2;
+    }
+    .mountain-4
+    {
+      position: absolute;
+      top: 175px;
+      left: 0px;
+      z-index: 3;
+    }
+
+    .mountain-5
+    {
+      position: absolute;
+      top: 210px;
+      left: 0px;
+      z-index: 4;
+    }
+
+    .mountain-6
+    {
+      position: absolute;
+      top: 918px;
+      left: 0px;
+      z-index: 5;
+    }
+
+    .trees-6
+    {
+      position: absolute;
+      top: 425px;
+      left: 0px;
+      z-index: 4;
+    }
+
+    .trees-7
+    {
+      position: absolute;
+      top: 490px;
+      left: 30px;
+      z-index: 5;
+    }
+
+    #contact-btn{
+        color: white;
     }
 
 .HeaderTittle {
@@ -41,7 +103,7 @@ text-align: center;
 }
 
 .pb_navbar{
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 100;
@@ -303,6 +365,9 @@ form {
 
        .header{
         background-image: url('./imagens/mobilefundo.png');
+        height: 100vh;
+        background-position-y: 0;
+        background-size: cover;
     }
 
     .carousel-2 {
@@ -479,7 +544,7 @@ span{
     }
 }
 
-@media (min-width: 801px){
+@media (min-width: 769px){
     #timer {
         font-size: 60px;
         font-weight: 500;
@@ -519,4 +584,40 @@ span{
     .elements{
         width: 200px;
     }
+
+    .header{
+        background-size: cover;
+        background-position-y: -200px;
+    }
+}
+
+#theMotionPath{
+    fill: none;
+    stroke: none;
+    stroke-width: 1;
+    stroke-linecap: butt;
+    stroke-linejoin:  miter;
+    stroke-opacity: 1;
+    z-index: 4;
+  }
+
+#sun{
+    z-index: 0;
+}
+
+svg {
+    position: fixed;
+    display: inline;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+.white-section{
+    background-color: white;
+    z-index: 3;
+}
+
+.hide{
+    z-index: 4;
 }
