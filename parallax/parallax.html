@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+
+* {
+  box-sizing: border-box;
+}
+
+body{
+  height: 8000px;
+  background-image: url("../1 - morning/2-sky.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.keyart, .keyart_layer {
+	height: 3500px;
+}
+
+#parallax {
+	display: block;
+}
+
+.keyart {
+	position: relative;
+	z-index: 10;
+  margin-left: -9px;
+}
+
+.keyart_layer {
+	background-position: top center;
+	background-size: auto 1000px;
+	background-repeat: no-repeat;
+  width: 100%;
+	position: absolute;
+}
+.keyart_layer.parallax {
+	position: fixed;
+}
+	#keyart-0 {
+		background-image: url('../1 - morning/2-sky.svg');
+    margin-top: -250px;
+	}
+	#keyart-1 {
+		background-image: url('../1 - morning/3-montain.svg');
+    margin-top: 250px;
+	}
+	#keyart-2 {
+		background-image: url('../1 - morning/4-montain.svg');
+    margin-top: 425px;
+	}
+	#keyart-3 {
+		background-image: url('../1 - morning/5-montain.svg');
+    margin-top: 475px;
+	}
+	#keyart-4 {
+		background-image: url('../1 - morning/Grupo\ 240-trees.svg');
+    margin-top: 500px;
+	}
+	#keyart-5 {
+		background-image: url('../1 - morning/7-trees.svg');
+    margin-top: 600px;
+	}
+
+  .text{
+    color: white;
+    display: flex;
+    z-index: 11;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+  }
+
+  #theMotionPath{
+    fill: none;
+    stroke: none;
+    stroke-width: 1;
+    stroke-linecap: butt;
+    stroke-linejoin:  miter;
+    stroke-opacity: 1;
+    z-index: 4;
+  }
+
+#sun{
+    z-index: 0;
+}
+
+svg {
+    position: fixed;
+    display: inline;
+    top: 0;
+    left: 0;
+    z-index: 10;
+  }
+
+  .a{
+    z-index: 10000;
+    position: absolute;
+
+  }
+
+  .nav-link{
+padding: 20px 0px 10px 0px;
+text-align: center;
+
+}
+
+.HeaderSUBtittle {
+   color: white;
+    font-family: 'poppins', sans-serif;
+    font-size: 18px;
+
+}
+
+.pb_navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    font-family: "Montserrat", Arial, sans-serif;
+    background-image: linear-gradient(rgb(8, 92, 22), rgba(0, 255, 85, 0));
+}
+
+.nav-link {
+font-family: 'poppins', sans-serif;
+font-size: 18px;
+color: white!important;
+margin-right: 30px;
+}
+
+.buttonDecor {
+background-color: #ffb000;
+color: #032b18;
+border-radius: 25px;
+width: 120px ;
+height: 43px;
+text-align: center;
+font-family: 'poppins', sans-serif;
+font-size: 16px;
+font-weight: 200px;
+font-weight: bold;
+}
+
+ul li {
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+
+.alignAllCenter {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+ }
+
+.text-sectionvision {
+    font-size: 25px;
+    color: white;
+    text-align: justify;
+}
+
+.title-sectionvision { 
+    color: white ;
+ font-size: 50px; font-weight: 600;
+margin-top: -130px;
+margin-left: 50px;
+}
+
+.imagevision{
+    border-radius: 5px;
+}
+
+.h850 {
+ height: 850px;
+ }
+    </style>
+</head>
+<body>
+
+  <section id="entrance">
+    <nav class="navbar navbar-expand-lg navbar-dark pb_navbar pb_scrolled-light">
+
+        <div class="container-lg" style="padding: 20px;">
+            <img src="imagens/logo.svg" style="width: 150px;">
+            <div class="collapse navbar-collapse " id="probootstrap-navbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#WhatHappensHere">What happens here</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#StaysHere">Activities</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#WhyNorthOfPortugal">Why North of Portugal</a></li>
+                    <li class="nav-item cta-btn ml-xl-2 ml-lg-2 ml-md-0 ml-sm-0 ml-0">
+                        <a  class="nav-link">
+                            <span href="#Contactus" class="pb_rounded-4 px-4 " >
+                                <button type="button" class="btn  buttonDecor" id="contact-btn" style="margin-bottom: 20px;"; >Contact us</button>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</section>
+
+  <section
+                class="header pb_cover_v3 overflow-hidden cover-bg-indigo cover-bg-opacity text-left pb_gradient_v1 pb_slant-light alignAllCenter"
+                id="section-home">
+                <div class="d-none d-md-block" style="position: relative; left: 0; top: 0;">
+                      <svg viewBox="0 0 200 200">
+                        <g transform="translate(-14,-68)">
+                             <path d="M 10 100 
+                                      Q 100 30 210 90"
+                                id="theMotionPath"
+                                data-500="fill: rgb(255,200,120);"/>
+                            <image href="../1 - morning/1-sun.svg" x="0" y="0" height="20px" width="20px" id="sun"/>
+                         </g>
+                        </svg>
+                  </div>
+
+            </section>
+
+    <section style="z-index: -1;">
+      <div class="container-fluid keyart" id="parallax" style="position: relative; left: 0; top: 0;">
+        <div class="keyart_layer parallax" id="keyart-1" data-speed="3"></div>
+        <div class="keyart_layer parallax" id="keyart-2" data-speed="10"></div>
+        <div class="keyart_layer parallax" id="keyart-3" data-speed="20"></div>
+      </div>
+    </section>
+
+    <section style="background-color: #ffb000; position: relative; z-index: 10;">
+      <div class="container-lg h850 alignAllCenter">
+          <div class="row justify-content-center">
+              <div id="ShortTermVision" class="col-12 col-md-6">
+                  <img src="imagens/halfform.svg" class="loader" style=" width: 123px;" ;>
+                  <h1 class="title-sectionvision northPadding">Short Term<br>
+                      Vision</h1>
+                  <div class="mt-5">
+                      <p class="text-sectionvision northPadding">Create an event as a way to make people who
+                          work remotely know the place, gastronomy and
+                          culture of the region.
+                      </p>
+                      <p class="text-sectionvision northPadding">Attract a total of 180 people who identify with
+                          the values of the event and who consider the
+                          possibility of staying in the region.
+                      </p>
+                  </div>
+              </div>
+
+              <div class="col-12 col-md-6 imageNorthPortugal">
+                  <img class="imagevision" src="https://i.pinimg.com/564x/39/60/2c/39602cb7d89dfc0a911c0752ef0e5ce1.jpg" width="457" height="480"/>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <section style="background-color: #255; position: relative; z-index: 10;">
+    <div class="container-lg h850 alignAllCenter">
+        <div class="row justify-content-center">
+            <div id="ShortTermVision" class="col-12 col-md-6">
+                <img src="imagens/halfform.svg" class="loader" style=" width: 123px;" ;>
+                <h1 class="title-sectionvision northPadding">Short Term<br>
+                    Vision</h1>
+                <div class="mt-5">
+                    <p class="text-sectionvision northPadding">Create an event as a way to make people who
+                        work remotely know the place, gastronomy and
+                        culture of the region.
+                    </p>
+                    <p class="text-sectionvision northPadding">Attract a total of 180 people who identify with
+                        the values of the event and who consider the
+                        possibility of staying in the region.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 imageNorthPortugal">
+                <img class="imagevision" src="https://i.pinimg.com/564x/39/60/2c/39602cb7d89dfc0a911c0752ef0e5ce1.jpg" width="457" height="480"/>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script>
+
+function castParallax() {
+
+var opThresh = 350;
+var opFactor = 750;
+
+window.addEventListener("scroll", function(event){
+
+  var top = this.pageYOffset;
+
+  var layers = document.getElementsByClassName("parallax");
+  var layer, speed, yPos;
+  for (var i = 0; i < layers.length; i++) {
+    layer = layers[i];
+    speed = layer.getAttribute('data-speed');
+    var yPos = -(top * speed / 100);
+    layer.setAttribute('style', 'transform: translate3d(0px, ' + yPos + 'px, 0px)');
+
+  }
+});
+}
+
+document.body.onload = castParallax();
+
+function positionSun()
+{
+  var  scrollY = window.scrollY || window.pageYOffset;
+  var  maxScrollY = document.documentElement.scrollHeight - 5500;
+  var  path = document.getElementById("theMotionPath");
+
+  // Calculate distance along the path the car should be for the current scroll amount
+  var  pathLen = path.getTotalLength();
+  var  dist = pathLen * scrollY / maxScrollY;
+  var  pos = path.getPointAtLength(dist);
+
+  // Calculate position a little ahead of the car (or behind if we are at the end), so we can calculate car angle
+  if (dist + 1 <= pathLen) {
+    var  posAhead = path.getPointAtLength(dist + 1);
+    var  angle = Math.atan2(posAhead.y - pos.y, posAhead.x - pos.x);
+  } else {
+    var  posBehind = path.getPointAtLength(dist - 1);
+    var  angle = Math.atan2(pos.y - posBehind.y, pos.x - posBehind.x);
+  }
+
+  // Position the car at "pos" totated by "angle"
+  var  car = document.getElementById("sun");
+  car.setAttribute("transform", "translate(" + pos.x + "," + pos.y + ") rotate(" + rad2deg(angle) + ")");
+}
+
+function rad2deg(rad) {
+  return 180 * rad / Math.PI;
+}
+
+// Reposition car whenever there is a scroll event
+window.addEventListener("scroll", positionSun);
+
+// Position the car initially
+positionSun();
+</script>
+</body>
+</html>

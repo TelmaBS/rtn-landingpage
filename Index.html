@@ -60,24 +60,22 @@
                 </div>
             </nav>
 
+            <!--PARALLAX SECTION-->
             <section class="header pb_cover_v3 overflow-hidden cover-bg-indigo cover-bg-opacity text-left pb_gradient_v1 pb_slant-light alignAllCenter" id="section-home">
                 <div class="d-none d-md-block" style="position: relative; left: 0; top: 0; z-index: 12;">
-                    <div>
-                        <img src="imagens/SVG/morning-sky.svg" class="morning-sky">
-                    </div>
                    <div>
                         <img src="imagens/morning/1920-1980-mountain.png" class="mountain-3 para-img" id="back-mountain"/>
                         <img src="imagens/morning/1920-1980-mountain2.png" class="mountain-4 para-img" id="middle-mountain"/>
                         <img src="imagens/morning/1920-1980-moutain3.png" class="mountain-5 para-img" id="front-mountain"/>
                         <div class="fixme">
                             <img src="imagens/morning/parallax-mountain.png" class="mountain-6 para-img" id="parallax-mountain"/>
-                    </div>
+                        </div>
                         
                    </div>
                       <svg viewBox="0 0 200 200">
                         <g transform="translate(-12,-44)">
                              <path d="M 10 90 
-                                      Q 40 10 200 60"
+                                      Q 40 10 180 60"
                                 id="theMotionPath"/>
                             <image href="../../1 - morning/1-sun.svg" x="0" y="0" height="20px" width="20px" id="sun"/>
                          </g>
@@ -463,11 +461,16 @@
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js%22%3E"></script>
 
 <script type="text/javascript">
+
+// This function is for the timer.
 function updateTimer() {
+
+    // Here you set the date it needs to count down to.
     future = Date.parse("Mar 15, 2022 14:18:00");
     now = new Date();
     diff = future - now;
 
+    // This calculates the days, hours, etc. from the future date.
     days = Math.floor(diff / (1000 * 60 * 60 * 24));
     hours = Math.floor(diff / (1000 * 60 * 60));
     mins = Math.floor(diff / (1000 * 60));
@@ -478,6 +481,7 @@ function updateTimer() {
     m = mins - hours * 60;
     s = secs - mins * 60;
 
+    // This part will show on the webpage.
     document.getElementById("timer")
         .innerHTML =
         '<div>' + d + '<span class="elements">DAYS</span></div>' +
@@ -487,18 +491,20 @@ function updateTimer() {
 }
 setInterval('updateTimer()', 1000);
 
+
+// This funtion is for the movement of the sun.
 function positionSun()
 {
   var  scrollY = window.scrollY || window.pageYOffset;
-  var  maxScrollY = document.documentElement.scrollHeight - window.innerHeight;
+  var  maxScrollY = document.documentElement.scrollHeight - 6000;//Change the sun speed here
   var  path = document.getElementById("theMotionPath");
 
-  // Calculate distance along the path the car should be for the current scroll amount
+  // This calculates distance along the path the sun should be for the current scroll amount
   var  pathLen = path.getTotalLength();
   var  dist = pathLen * scrollY / maxScrollY;
   var  pos = path.getPointAtLength(dist);
 
-  // Calculate position a little ahead of the car (or behind if we are at the end), so we can calculate car angle
+  // This calculates position a little ahead of the sun (or behind if we are at the end), so we can calculate sun angle
   if (dist + 1 <= pathLen) {
     var  posAhead = path.getPointAtLength(dist + 1);
     var  angle = Math.atan2(posAhead.y - pos.y, posAhead.x - pos.x);
@@ -507,23 +513,26 @@ function positionSun()
     var  angle = Math.atan2(pos.y - posBehind.y, pos.x - posBehind.x);
   }
 
-  // Position the car at "pos" totated by "angle"
-  var  car = document.getElementById("sun");
-  car.setAttribute("transform", "translate(" + pos.x + "," + pos.y + ") rotate(" + rad2deg(angle) + ")");
+  // Position the sun at "pos" totated by "angle"
+  var  sun = document.getElementById("sun");
+  sun.setAttribute("transform", "translate(" + pos.x + "," + pos.y + ") rotate(" + rad2deg(angle) + ")");
 }
 
 function rad2deg(rad) {
   return 180 * rad / Math.PI;
 }
 
-// Reposition car whenever there is a scroll event
+// Reposition sun whenever there is a scroll event
 window.addEventListener("scroll", positionSun);
 
-// Position the car initially
+// Position the sun initially
 positionSun();
 </script>
 
+
 <script>
+
+    // This script is for the parallax and the fixed image
     var backm = document.getElementById('back-mountain')
     var midm = document.getElementById('middle-mountain')
     var frontm = document.getElementById('front-mountain')
@@ -531,18 +540,25 @@ positionSun();
 
     window.addEventListener('scroll' , function(){
         var value = window.scrollY;
+
+        // Set margin-top
         backm.style.marginTop = 275 + 'px';
         midm.style.marginTop = 300 + 'px';
         frontm.style.marginTop = 325 + 'px';
+
+        // Set speed and direction, how fast it is moving.
         backm.style.top = value * 0.95 + 'px';
         midm.style.top = value * 0.75 + 'px';
         frontm.style.top = value * 0.5 + 'px';
     })
 
-    
+/*
+    // This part is for fixing the image.
     var fixmeTop = $('.fixme').offset().top;
     $(window).scroll(function() {
     var currentScroll = $(window).scrollTop();
+
+    // The if is for when you scroll past the value it fixes the image.
     if (currentScroll >= 580) {
         $('.fixme').css({
             position: 'fixed',
@@ -554,6 +570,7 @@ positionSun();
             position: 'static'
         });
     }
-});
+    });
+*/
 </script>
 </html>

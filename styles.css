@@ -11,6 +11,10 @@
  height: 850px;
  }
 
+ #entrance{
+     background-color: #e0dab8;
+ }
+
  .header{
     background-image: url('imagens/morning/1920-1980-sky.png');
     background-size: cover;
@@ -109,6 +113,7 @@ text-align: center;
     z-index: 100;
     width: 100%;
     font-family: "Montserrat", Arial, sans-serif;
+    background-image: linear-gradient(rgb(151, 185, 216), rgba(255,0,0,0));
 }
 
 .nav-link {
@@ -117,7 +122,7 @@ font-size: 18px;
 color: white!important;
 margin-right: 30px;
 }
-   a
+
 
 
 .btn-success {
@@ -200,6 +205,10 @@ font-size: 22px;
     width: 10px;
     height: 10px;
     background-color:#e44200;
+}
+
+.carousel-indicators{
+    z-index: 1;
 }
 .title-section4 {
     color: #e44200;
