@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parallax</title>
+    <title>Parallax-mobile</title>
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -59,6 +59,19 @@ body{
     margin-top: 475px;
 	}
 
+  #keyart-1m {
+		background-image: url('../Nova pasta/first\ mountain.svg');
+    margin-top: 150px;
+	}
+	#keyart-2m {
+		background-image: url('../Nova pasta/second\ mountain.svg');
+    margin-top: 325px;
+	}
+	#keyart-3m {
+		background-image: url('../Nova pasta/main\ mountain.svg');
+    margin-top: 375px;
+	}
+
   .text{
     color: white;
     display: flex;
@@ -88,13 +101,6 @@ svg {
     display: inline;
     top: 0;
     left: 0;
-    z-index: 10;
-  }
-
-  .a{
-    z-index: 10000;
-    position: absolute;
-
   }
 
   .nav-link{
@@ -185,12 +191,47 @@ margin-left: 50px;
     font-weight: bold;
     margin-bottom: 20px;
 }
+
+@media screen and (max-width: 425px){
+
+  svg{
+    transform: translate(10px, 140px);
+  }
+
+  image{
+    height: 40px;
+    width: 40px;
+  }
+
+  body{
+    background-image: url("../Nova pasta/sky.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+  }
+
+  image{
+    background-image: url('../Nova pasta/sun.svg');
+  }
+}
+
+@media screen and (max-width: 768px){
+
+svg{
+  transform: translate(7px, 150px);
+}
+
+image{
+  height: 40px;
+  width: 40px;
+}
+}
     </style>
 </head>
 <body>
 
     <!-- Header -->
-  <section id="entrance">
+  <section id="entrance" style="position: absolute;">
     <nav class="navbar navbar-expand-lg navbar-dark pb_navbar pb_scrolled-light">
 
         <div class="container-lg" style="padding: 20px;">
@@ -214,38 +255,41 @@ margin-left: 50px;
 </section>
 
   <!-- Sun movement -->
-  <section
-                class=" pb_cover_v3 overflow-hidden cover-bg-indigo cover-bg-opacity text-left pb_gradient_v1 pb_slant-light alignAllCenter"
-                id="section-home">
-                <div class="d-none d-md-block" style="position: relative; left: 0; top: 0;">
+    <section class=" pb_cover_v3 overflow-hidden cover-bg-indigo cover-bg-opacity text-left pb_gradient_v1 pb_slant-light alignAllCenter"
+             id="section-home">
+                <div style="position: relative; left: 0; top: 0;">
                       <svg viewBox="0 0 200 200" id="svg-large">
 
                         <!-- CHANGE POSITION -->
                         <g transform="translate(-14,-68)">
                              <path d="M 10 100 
                                       Q 100 30 210 90"
-                                id="theMotionPath"
-                                data-500="fill: rgb(255,200,120);"/>
+                                id="theMotionPath"/>
                             <image href="../1 - morning/1-sun.svg" x="0" y="0" height="20px" width="20px" id="sun"/>
                          </g>
-
-                        </svg>
-                  </div>
+                      
+                      </svg>
+                </div>
 
             </section>
 
     <!-- Parallax section -->
-    <section style="z-index: -1;">
+    <section style="z-index: -1; margin-left: -6px;">
       <div class="container-fluid keyart" id="parallax" style="position: relative; left: 0; top: 0;">
 
-                                                  <!-- CHANGE SPEED HERE -->
-        <div class="keyart_layer parallax" id="keyart-1" data-speed="3"></div>
-        <div class="keyart_layer parallax" id="keyart-2" data-speed="10"></div>
-        <div class="keyart_layer parallax" id="keyart-3" data-speed="20"></div>
+                                                                                <!-- CHANGE SPEED HERE -->
+        <div class="keyart_layer parallax 	d-none d-sm-none d-md-block" id="keyart-1" data-speed="3"></div>
+        <div class="keyart_layer parallax 	d-none d-sm-none d-md-block" id="keyart-2" data-speed="10"></div>
+        <div class="keyart_layer parallax 	d-none d-sm-none d-md-block" id="keyart-3" data-speed="20"></div>
+
+                                                                            <!-- CHANGE SPEED HERE FOR MOBILE -->
+        <div class="keyart_layer parallax d-blockd-sm-block d-md-none" id="keyart-1m" data-speed="-3"></div>
+        <div class="keyart_layer parallax d-blockd-sm-block d-md-none" id="keyart-2m" data-speed="3"></div>
+        <div class="keyart_layer parallax d-blockd-sm-block d-md-none" id="keyart-3m" data-speed="10"></div>
       </div>
     </section>
 
-    <!--tickets section-->
+    <!-- Tickets section -->
     <section class="white-section" style="position: relative; z-index: 10;">
       <div class="container hide">
           <div class="col-12 d-block title-tickets">

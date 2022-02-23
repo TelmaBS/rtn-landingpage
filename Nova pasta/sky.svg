@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="390" height="450" viewBox="0 0 390 450">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Retângulo_2648" data-name="Retângulo 2648" width="390" height="450" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.5" y1="0.725" x2="0.5" y2="-0.475" gradientUnits="objectBoundingBox">
+      <stop offset="0.232" stop-color="#e0dab8"/>
+      <stop offset="0.261" stop-color="#d4d5bd"/>
+      <stop offset="0.329" stop-color="#bfcdc6"/>
+      <stop offset="0.404" stop-color="#b0c7cd"/>
+      <stop offset="0.493" stop-color="#a8c3d1"/>
+      <stop offset="0.628" stop-color="#a5c2d2"/>
+      <stop offset="0.678" stop-color="#a5c2d2"/>
+      <stop offset="1" stop-color="#a5c2d2"/>
+    </linearGradient>
+  </defs>
+  <g id="Grupo_de_máscara_68" data-name="Grupo de máscara 68" clip-path="url(#clip-path)">
+    <rect id="Retângulo_2646" data-name="Retângulo 2646" width="1229" height="447" transform="translate(-577.579)" fill="url(#linear-gradient)"/>
+  </g>
+</svg>
