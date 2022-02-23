@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <style>
@@ -15,7 +15,7 @@
 }
 
 body{
-  height: 8000px;
+
   background-image: url("../1 - morning/2-sky.svg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -128,7 +128,7 @@ text-align: center;
     z-index: 100;
     width: 100%;
     font-family: "Montserrat", Arial, sans-serif;
-    background-image: linear-gradient(rgb(8, 92, 22), rgba(0, 255, 85, 0));
+    background-image: linear-gradient(rgb(83, 109, 108, 1), rgba(0, 255, 85, 0));
 }
 
 .nav-link {
@@ -210,7 +210,7 @@ margin-left: 50px;
 </section>
 
   <section
-                class="header pb_cover_v3 overflow-hidden cover-bg-indigo cover-bg-opacity text-left pb_gradient_v1 pb_slant-light alignAllCenter"
+                class=" pb_cover_v3 overflow-hidden cover-bg-indigo cover-bg-opacity text-left pb_gradient_v1 pb_slant-light alignAllCenter"
                 id="section-home">
                 <div class="d-none d-md-block" style="position: relative; left: 0; top: 0;">
                       <svg viewBox="0 0 200 200">
@@ -315,7 +315,7 @@ document.body.onload = castParallax();
 function positionSun()
 {
   var  scrollY = window.scrollY || window.pageYOffset;
-  var  maxScrollY = document.documentElement.scrollHeight - 5500;
+  var  maxScrollY = document.documentElement.scrollHeight - 2500;
   var  path = document.getElementById("theMotionPath");
 
   // Calculate distance along the path the car should be for the current scroll amount
