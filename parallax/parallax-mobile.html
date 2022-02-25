@@ -339,19 +339,20 @@
   <section class="white-section h850 alignAllCenter mountain-background" style="position: relative; z-index: 10; ">
     <div class="container">
 
-      <div class="row  justify-content-center" >
-        <div class="col-12 col-sm-6  "  >
-          
-            <img style="width: 500px" src="imagens/logotipo-section-1.svg" alt="logotipo section 1">
+      <div class="row  justify-content-center">
+        <div class="col-12 col-sm-6  ">
+
+          <img style="width: 450px" src="imagens/logotipo-section-1.svg" alt="logotipo section 1">
 
         </div>
 
         <div class="col-12 col-sm-6  ">
-          
-            <h1 >Create a community of remote workers in Portugal!</h1>
-            <h2>where you can work and live in a sustainable way and contribute positively to local development.</h2>
 
-         
+          <h1 class="tittle-RTN">Create a community of remote workers in Portugal!</h1>
+          <h2 style="color: white ; font-size: 25px;">where you can work and live in a sustainable way and contribute
+            positively to local development.</h2>
+
+
         </div>
 
 
@@ -413,6 +414,68 @@
 
       </div>
     </div>
+  </section>
+
+
+  <!-- Slide -->
+  <section class="white-section alignAllCenter mountain-background" style="position: relative; z-index: 10; ">
+
+    <div class="slider">
+      <div class="slider__slide slider__slide--active" data-slide="1">
+        <div class="slider__wrap">
+          <div class="slider__back"></div>
+        </div>
+        <div class="slider__inner">
+          <div class="slider__content">
+            <h1>Northern
+              <br> Portugal!
+            </h1>
+            <h2>Universities<br>
+              Technological <br>
+              Development Centers <br>
+              Peneda-Gerês National Park <br>
+              Wine Routes</h2><a class="go-to-next">next</a>
+          </div>
+        </div>
+      </div>
+      <div class="slider__slide" data-slide="2">
+        <div class="slider__wrap">
+          <div class="slider__back"></div>
+        </div>
+        <div class="slider__inner">
+          <div class="slider__content">
+            <h1>Northern
+              <br> Portugal!
+            </h1>
+            <h2>Universities <br>
+              Technological <br>
+              Development Centers <br>
+              Peneda-Gerês National Park <br>
+              Wine Routes</h2><a class="go-to-next">next</a>
+          </div>
+        </div>
+      </div>
+      <div class="slider__slide" data-slide="3">
+        <div class="slider__wrap">
+          <div class="slider__back"></div>
+        </div>
+        <div class="slider__inner">
+          <div class="slider__content">
+            <h1>Northern
+              <br> Portugal!
+            </h1>
+            <h2>Universities<br>
+              Technological <br>
+              Development Centers <br>
+              Peneda-Gerês National Park <br>
+              Wine Routes</h2><a class="go-to-next">next</a>
+          </div>
+        </div>
+      </div>
+      <div class="slider__indicators"></div>
+    </div><a class="sig" href="http://nathan.tokyo" target="_blank">NATHAN.TOKYO</a>
+
+
   </section>
 
   <!-- Test section 1-->
@@ -495,6 +558,8 @@
   </section>
 
 
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script>
 
     function castParallax() {
@@ -554,8 +619,6 @@
     // Position the sun initially
     positionSun();
 
-
-
     // This function is for the timer.
     function updateTimer() {
 
@@ -584,6 +647,37 @@
         '<div>' + s + '<span class="elements">SECONDS</span></div>';
     }
     setInterval('updateTimer()', 1000);
+
+
+    // Telma
+    $(document).ready(function () {
+      for (var i = 1; i <= $(".slider__slide").length; i++) {
+        $(".slider__indicators").append(
+          '<div class="slider__indicator" data-slide="' + i + '"></div>'
+        );
+      }
+      setTimeout(function () {
+        $(".slider__wrap").addClass("slider__wrap--hacked");
+      }, 1000);
+    });
+
+    function goToSlide(number) {
+      $(".slider__slide").removeClass("slider__slide--active");
+      $(".slider__slide[data-slide=" + number + "]").addClass(
+        "slider__slide--active"
+      );
+    }
+
+    $(".slider__next, .go-to-next").on("click", function () {
+      var currentSlide = Number($(".slider__slide--active").data("slide"));
+      var totalSlides = $(".slider__slide").length;
+      currentSlide++;
+      if (currentSlide > totalSlides) {
+        currentSlide = 1;
+      }
+      goToSlide(currentSlide);
+    });
+
   </script>
 </body>
 
