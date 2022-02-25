@@ -630,3 +630,26 @@ svg {
 .hide{
     z-index: 4;
 }
+
+
+#tittle-general{  
+    color: #0d3120;
+    font-size: 45px; 
+    font-weight: 600;
+   
+    padding-bottom: 60px;
+    color: #0d3120;
+    text-align: center;
+
+}
+
+.text-whh{
+    
+    color: #0d3120;
+font-size: 30px;
+    color: #0d3120;
+    font-weight: 500 ;
+}
+
+
+
