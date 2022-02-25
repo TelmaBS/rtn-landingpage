@@ -652,4 +652,12 @@ font-size: 30px;
 }
 
 
+.mountain-background{
+background-image: url('imagens/mountaing-1-section.svg');
+background-size: cover;
+background-repeat: no-repeat;
+ height: 100vh;
+ top: 0;
+ left: 0;
 
+}
