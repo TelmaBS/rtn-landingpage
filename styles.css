@@ -19,6 +19,10 @@
      height: 450px;
  }
 
+ .h365{
+   height: 365px;
+   background-color: #032b18;
+ }
  #entrance{
      background-color: #e0dab8;
  }
@@ -167,7 +171,7 @@ background-color: #ffb000;
 color: #032b18;
 border-radius: 25px;
 width: 120px ;
-height: 43px;
+height: 100px;
 text-align: center;
 font-family: 'poppins', sans-serif;
 font-size: 16px;
@@ -566,6 +570,12 @@ span{
 
 }
 
+.img-displayed {
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 
 @media (min-width: 769px){
@@ -950,3 +960,101 @@ body {
     text-align: center;
     font-family: 'poppins', sans-serif;
   }
+
+  @media screen and (max-width: 3500px) and (min-width: 1792px) {
+    .Medium-screen{
+      display: none;
+    }
+    .tablet-screen {
+          display: none;
+         }
+         
+    .mobile-screen {
+        display: none;
+       }
+    
+  }
+
+  @media screen and (max-width: 1792px) and (min-width: 1300px) {
+    .banner{
+      display: none;
+    }
+    .tablet-screen {
+          display: none;
+         }
+         
+    .mobile-screen {
+        display: none;
+       }
+    
+  }
+
+  @media screen and (max-width: 1300px) and (min-width: 768px) {
+    .banner{
+      display: none;
+    }
+    .Medium-screen{
+      display: none;
+    }
+    .mobile-screen {
+        display: none;
+       }
+    
+  }
+
+  @media screen and (max-width: 768px){
+    .banner{
+      display: none;
+    }
+    .Medium-screen{
+      display: none;
+    }
+    .tablet-screen {
+      display: none;
+     }
+     .logo-lg-media{
+       display: none;
+     }
+  }
+
+
+  @media screen and (max-width: 768px){
+  
+     .logo-lg-media{
+       width: 250px;
+     }
+
+     .tittle-RTN{
+       font-size: 30px;
+     }
+
+     .text-rtn {
+       font-size: 20px;
+     }
+
+     .text-whh {
+       font-size: 25px;
+     }
+
+     .image-size {
+       width: 100px;
+     } 
+
+  }
+
+  
+  @media screen and (max-width:950px){
+  
+ .imagevision{
+   display: none;
+ }
+
+ }
+
+ 
+
+.text-rtn {
+  color: white;
+  font-size:  25px;
+
+}
