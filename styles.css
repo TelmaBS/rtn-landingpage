@@ -1047,3 +1047,34 @@ body {
   font-size:  25px;
 
 }
+
+
+.scrollJq {
+  height: 100vh;
+  position: fixed;
+  width: 100%;
+  z-index: 999 !important;
+}
+
+.scrollJq::before {
+  animation: bounce 1s ease infinite;
+  bottom: 2rem;
+  color: rgb(168, 164, 162);
+  content: '╲╱';
+  font-size: 2rem;
+  height: 4rem;
+  left: 50%;
+  letter-spacing: -1px;
+  line-height: 4rem;
+  margin-left: -3rem;
+  opacity: 0.8;
+  position: fixed;
+  text-align: center;
+  width: 6rem;
+}
+
+@keyframes bounce {
+  50% {
+    transform: translateY(-50%);
+  }
+}
